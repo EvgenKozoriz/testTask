@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./styles/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="newEvent isVisible">
+            <label>Name of the event:</label>
+            <input id="inputName" placeholder="FE team sync">
+            <label>Participants:</label>
+            <select id="membersSelect">
+                <option>Maria</option>
+                <option>Bob</option>
+                <option>Alex</option>
+            </select>
+            <label>Day:</label>
+            <select id="daySelect">
+                <option value ="0">Monday</option>
+                <option value ="1">Tuesday</option>
+                <option value ="2">Wednesday</option>
+                <option value ="3">Thursday</option>
+                <option value ="4">Friday</option>
+            </select>
+            <label>Time:</label>
+            <select id="timeSelect">
+                <option value="0">10:00</option>
+                <option value="1">11:00</option>
+                <option value="2">12:00</option>
+                <option value="3">13:00</option>
+                <option value="4">14:00</option>
+                <option value="5">15:00</option>
+                <option value="6">16:00</option>
+                <option value="7">17:00</option>
+                <option value="8">18:00</option>
+            </select>
+            <div class="buttons">
+                <button id="cancelBtn">Cancel</button>
+                <button id="createBtn">Create</button>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Calendar</h1>
+            <button id="newEventBtn">NewEvent+</button>
+            <select id="selectedMember">
+                <option value="Maria">Maria</option>
+                <option value="Bob">Bob</option>
+                <option value="Alex">Alex</option>
+            </select>
+        </div>
+    
+        <div id="table"></div>
+        <script src="./scripts/index.js"></script>
+    </div>
+    
+</body>
+</html>
